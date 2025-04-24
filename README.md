@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-[URL to the site](https://psjungle.github.io/CSE110_Lab2/)
+# Lab 3
+[URL to the site](https://psjungle.github.io/sp25-cse110-lab3/)
