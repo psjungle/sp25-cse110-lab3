@@ -2,66 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSE 110 Meeting Minutes</title>
     <link rel="icon" type="image/png" href="media/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <nav>
-        <div> CSE 110</div>
+        <div style="background-color: red; margin-top: 1em; margin-bottom: 1em; margin-left: 1em; margin-right: 1em; position: fixed;"> CSE 110</div>
     </nav>
     <header>
-      <h1>Some Fake Meeting Title</h1>
-      <h2>What is this meeting even about?</h2>
-      <h3>April 15, 2025</h3>
+      <h1 style="color:rgb(0, 255, 0); margin: 10px;">Some Fake Meeting Title</h1>
+      <h2 style="color:#23823F; margin: auto;">What is this meeting even about?</h2>
+      <h3 style="color:hsl(120, 75, 75); padding: 10pt;">April 15, 2025</h3>
     </header>
     <hr>
 
     <main>
-      <section>
-        <h2>Attendance</h2>
-        <ul>
-          <li><b>Me</b></li>
-          <li><strong>Myself</strong></li>
-          <li><i>I</i></li>
-        </ul>
-      </section>
+      <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+        <section>
+          <h2 style="color:blue; padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; padding-right: 0.5em;">Attendance</h2>
+          <ul>
+            <li><b style="color: red; text-align: end;">Me</b></li>
+            <li><strong>Myself</strong></li>
+            <li><i>I</i></li>
+          </ul>
+        </section>
+
+        <section style="border-style: solid; border-color: black; border-width: 1q; border-radius: 1em;">
+          <h2>Agenda</h2>
+          <ol>
+            <li><em>Finish this assignment</em></li>
+            <li><a href="https://www.github.com" target="_blank">Push it to github</a></li>
+            <li style="text-decoration: line-through">Go to bed</li>
+          </ol>
+        </section>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+        <section>
+          <h2 style="color:color(srgb 1 0 0   / 0.5)">Unfinished Business</h2>
+          <ul>
+            <li>Everything is finished</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>New Business</h2>
+          <ul>
+            <li>Wake up tomorrow</li>
+            <li>Think about life</li>
+          </ul>
+        </section>
+      </div>
+    
 
       <section>
-        <h2>Agenda</h2>
-        <ol>
-          <li><em>Finish this assignment</em></li>
-          <li><a href="https://www.github.com" target="_blank">Push it to github</a></li>
-          <li>Go to bed</li>
-        </ol>
-      </section>
-
-      <section>
-        <h2>Unfinished Business</h2>
-        <ul>
-          <li>Everything is finished</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>New Business</h2>
-        <ul>
-          <li>Wake up tomorrow</li>
-          <li>Think about life</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Miscellaneous Comments</h2>
+        <h2 style="color:blue; color:color-mix(in srgb, red 30%, blue 70%)">Miscellaneous Comments</h2>
         <p>I am dreading having to use HTML/CSS/JS for this class</p>
         <p>But what can I do</p>
       </section>
 
-      <section>
+      <section style="height: 50%; width: 80%;">
         <h2>Architecture</h2>
         <img src="media/pork.jpg" alt="Architecture" width="400" height="400"/>
       </section>
 
-      <section>
+      <section style="position: relative;">
         <h2>Audio</h2>
         <audio controls>
           <source src="media/roblox-death-sound-effect.mp3" type="audio/mp3">
@@ -73,13 +80,12 @@
             <video controls width="640" height="360">
                 <source src="media/chickenjockey.mp4" type="video/mp4">
             </video>
-        <h2>Video</h2>
       </section>
     
 
-      <section>
+      <section style="max-height: fit-content; max-width: fit-content;">
         <h2>Fill out this form</h2>
-        <form action="#">
+        <form style="display: inline;" action="#">
           <fieldset>
             <legend>The form</legend>
             <label for="name">Name:</label>
@@ -122,7 +128,7 @@
 
     <details><summary>Here is a summary</summary></details>
 
-    <footer>
+    <footer style="display: none;">
       <p>Meeting Minutes</p>
     </footer>
   </body>
