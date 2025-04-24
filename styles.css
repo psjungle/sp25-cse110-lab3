@@ -1,0 +1,20 @@
+/* this is a comment in CSS */
+
+h2:hover {
+    background-color: gold;
+}
+
+a:active {
+    box-shadow: 2px 2px 5px #fc894d;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 20px;
+        background-color: #00d0fe;
+    }
+}
+
+h2 {
+    font-family: Impact;
+}
