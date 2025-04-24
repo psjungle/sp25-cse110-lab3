@@ -1,5 +1,11 @@
 /* this is a comment in CSS */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 h2:hover {
     background-color: gold;
 }
@@ -13,8 +19,74 @@ a:active {
         font-size: 20px;
         background-color: #00d0fe;
     }
+    .two-col {
+        display: block !important;
+    }
 }
 
-h2 {
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+h1, h2 {
     font-family: Impact;
+}
+
+a[target="_blank"] {
+    color: teal;
+    text-decoration: none;
+}
+
+main section p {
+    margin-left: 1em;
+}
+
+main > div {
+    margin-bottom: 1rem;
+}
+
+section ~ section {
+    border-top: 1px dashed #ccc;
+    padding-top: 1rem;
+}
+
+h2 + ul {
+    list-style-type: square;
+    margin-bottom: 1rem;
+}
+
+button[type="submit"].btn {
+    padding: .5em 1em;
+}
+
+main:has(> section form) {
+    background: #f1f8e9;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+  
+
+main {
+    section {
+        h2 {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.panel {
+    background: #e0f7fa;
+    border: 1px solid #00796b;
+    border-radius: .5em;
+    padding: 1rem;
+    margin: .5rem;
+}
+
+#name {
+    width: 100%;
+    max-width: 20em;
+    padding: .5em;
+    border: 1px solid #666;
 }
